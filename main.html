@@ -22,9 +22,14 @@
 		<script>
 			document.querySelector('input[type="button"]').addEventListener("click", ()=> {
   const select = document.getElementById("colorSelect");
+
+  
   if (select.selectedIndex !== -1) {
     select.remove(select.selectedIndex);
   }
+
+  
+  select.classList.toggle("modified");
 });
 
 		</script>
